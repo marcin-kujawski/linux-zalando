@@ -1,0 +1,461 @@
+ls -la
+which bash
+which sh
+ls -la /usr/bin/sh
+ls -la /usr/bin/dash 
+systemctl-blame
+systemctl blame
+systemd-analyze blame
+systemd-analyze 
+systemctl get-default 
+systemctl set-default  multi-user.target  
+ls -la /lib/systemd/system/runlevel*.target
+uptime
+cat /proc/cpuinfo 
+cat /proc/cpuinfo | grep processor -i
+cat /proc/meminfo 
+free -m
+df -h
+ls -la /dev
+dd if=/dev/zero of=/root/bigfile1 bs=1024M count=2
+ls -la /root/bigfile1 
+ls -la /root/bigfile1 -h 
+dd if=/dev/urandom of=/root/bigfile2 bs=10M count=5
+ls -la /root/bigfile*
+ls -la /root/bigfile* -h
+swapon -a
+swapon -s
+vi /etc/fstab 
+blkid
+who
+cd /var/log
+ls -la
+less /var/log/messages
+lsb_release -a
+less /var/log/syslog 
+less /var/log/syslog | grep student
+less /var/log/syslog | grep student -A 10
+ls -la 
+dmesg 
+journalctl 
+ls -la 
+echo "czesc
+"
+echo to jest test
+env
+printenv
+ls
+which ls
+cp /usr/bin/ls /tmp/marcin
+/tmp/marcin 
+marcin
+env | grep PATH
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/tmp
+marcin
+alias
+alias finda=ls -la|grep -i a*
+alias finda="ls -la|grep -i a*"
+finda
+ls -la|grep -i a*
+ls -la|grep -i a
+cd
+vi backup.sh
+./backup.sh
+ls -la 
+source backup.sh 
+vi backup.sh 
+source backup.sh 
+vi backup.sh 
+source backup.sh 
+chmod +x backup
+chmod +x backup.sh 
+./backup
+ls -al
+cd BACKUP_DIR/
+ls -la
+cd ..
+cd
+cd /tmp/
+cd
+vi backup
+ls -la
+vi backup.sh 
+rm backup
+rm BACKUP_DIR
+rmdir BACKUP_DIR
+mkdir /tmp/test
+touch /tmp/test/file1
+touch /tmp/test/file2
+rmdir /tmp/test
+rm -rf /tmp/test/
+ls -la /tmp/test/
+./backup.sh 
+vi backup
+vi backup.sh 
+./backup.sh 
+echo test
+echo $0
+echo $?
+vi backup
+vi backup.sh 
+ls -la
+./backup.sh 
+ls -la backup
+vi backup.sh 
+./backup
+./backup.sh 
+less /var/log/syslog 
+mv backup.sh linux-zalando/
+ls -al linux-zalando/
+rm -rf linux-zalando/docx/
+ls -la
+ls -la .
+cp bigfile2 .
+find / -name bigfile
+find / -name bigfile*
+find / -name "bigfile*"
+find / -name "bigfile*" > /dev/null
+find / -name "bigfile*" 2&1 > /dev/null
+find / -name "bigfile*" 2> /dev/null
+find / -name "bigfile*" 1> /dev/null
+find / -name "bigfile*" 1> output.txt 2>&1
+cat output.txt
+ls -la
+find -h
+find --help
+man find
+find / -type d -empty
+man find
+ls -la /dev/ | tail
+ls -la /dev/ | grep sd
+man find
+ls -la 
+cat linux-zalando/backup.sh | grep -in if
+cat linux-zalando/backup.sh | grep -in if -B 3 -A 5
+grep ^mkdir linux-zalando/backup.sh 
+grep ^echo linux-zalando/backup.sh 
+grep "$ linux-zalando/backup.sh 
+grep \"$ linux-zalando/backup.sh 
+grep \"$ linux-zalando/backup.sh -n
+mkdir test
+cp linux-zalando/backup.sh test/
+cp linux-zalando/backup.sh test/backup2.sh
+grep -r logger test/*
+vi plik1
+grep -o "[0-9]\{3\}-[0-9]\{3\}-[0-9]\{4\}" 
+cat plik1 
+grep -o "[0-9]\{3\}-[0-9]\{3\}-[0-9]\{3\}" plik1 
+grep -o "[0-9]\{3\}-[0-9]\{4\}-[0-9]\{3\}" plik1 
+grep -o "[a-z][A-Z]" plik1 
+grep -o "[a-z]" plik1 
+grep -o "[a-zA-Z]" plik1 
+grep -o "[a-z]\{5}" plik1 
+grep -o "[a-z]\{\5}" plik1 
+grep -o "[a-z]\{5\}" plik1 
+grep -h
+grep --help
+awk '{print $2}' plik1
+awk '{print $2}' -F "-" plik1
+awk -F "-" '{print $2}' plik1
+history 
+sed 's/zdanie/cos innego/gI' plik1
+ip
+ip a
+systemctl status sshd
+vi /etc/ssh/sshd_config
+systemctl reload sshd
+passwd
+which sshd
+which ssh
+journalctl -s /usr/sbin/sshd
+journalctl -S /usr/sbin/sshd
+journalctl 
+journalctl --help
+journalctl --unit /usr/bin/sshd
+journalctl --unit /usr/bin/ssh
+journalctl | grep sshd
+vi /etc/ssh/sshd_config
+systemctl reload sshd
+vi .ssh/authorized_keys
+mkdir .ssh
+vi .ssh/authorized_keys
+ls -la .ssh/authorized_keys
+chmod 600 .ssh/authorized_keys
+ls -la .ssh/authorized_keys
+vi /etc/ssh/sshd_config
+systemctl reload sshd
+vi /etc/ssh/sshd_config
+systemctl reload sshd
+chmod 777 linux-zalando/backup.sh 
+cp -rp linux-zalando/backup.sh /tmp/
+chmod 777 /tmp/backup.sh 
+ls -la /tmp/
+sudo apt update
+sudo apt install xfce4 xfce4-goodies -y
+sudo apt install tightvncserver -y
+vncpasswd 
+ls -la .vnc/
+vncserver :1
+netstat 
+apt install net-tools
+netstat -help
+netstat -vatnulp
+ss -atnulp
+vncserver :2
+vncserver -kill :1
+vncserver -kill :2
+vncserver :1
+vncserver :2
+vi /root/.vnc/xstartup
+vncserver -kill :2
+vncserver :2
+ls -la /root/.vnc/xstartup
+vncserver -localhost
+rm -rf /tmp/.X1-lock
+vncserver -localhost
+ip a
+netstat -vatnulp
+tigervnc
+vncviewer
+vncserver -kill :3
+vncserver :3
+netstat -vatnulp
+ls -la
+vi plik2
+su - student
+vi plik2
+nano plik2
+ls -la plik3 
+vi plik3
+man ps
+ps -h
+ps --help
+ps -ef
+ps -efly
+ps aux
+ps -ef | grep vnc
+ps -ef | grep blabla
+ps -ef | grep sshd
+pgrep sshd
+pgrep sshd -v
+pgrep sshd -l
+pgrep sshd -a
+pgrep -U jasiek
+pgrep -U student
+pgrep -U student -a
+ps -ef | grep student
+ps aux | grep student
+vi linux-zalando/skrypt.sh
+sleep 10
+nice +10 linux-zalando/skrypt.sh & 
+nice -n +10 linux-zalando/skrypt.sh & 
+nice -n 10 linux-zalando/skrypt.sh & 
+nice -n 10 linux-zalando/skrypt.sh 
+chmod +x linux-zalando/skrypt.sh
+nice -n 10 linux-zalando/skrypt.sh &
+ps -ef 124173
+ps -ef |grep 124173
+kill -l
+kill 124174
+ps -ef |grep 124173
+kill 124173
+ps -ef |grep 124173
+nice -n 10 linux-zalando/skrypt.sh 
+ps -ef |grep skrypt.sh
+nice -n 10 linux-zalando/skrypt.sh &
+ps -ef |grep skrypt.sh
+ps -ef |grep 124194
+kill -9 124194
+nice -n 10 linux-zalando/skrypt.sh &
+ps -efl |grep skrypt
+ps -efl |grep 124200
+renice -20 124200
+ps -efl |grep 124200
+renice -40 124200
+renice 200 124200
+top
+htop
+apt  install htop -y
+htop
+find / -name "*htoprc*"
+vi /root/.config/htop/htoprc
+kill -l
+ps -ef | grep sshd
+ip a 
+ps -ef | grep sshd
+kill -19 124719
+kill -18 124719
+ps -o pid,ppid,%cpu,%mem,cmd
+man ps
+d f-hT
+df -hT
+du * /var/log
+du -sh * /var/log
+du -sh /var/log
+du -sh /var/log/*
+du -sh /var/log/* | grep -e M -e G
+du -ah / | sort -rh | head -10
+watch -n1 ls -la .
+mkdir test
+mkdir test-dir
+watch -n1 ls -la test-dir/
+tail -f /var/log/syslog 
+watch -n1 cat /var/log/syslog 
+tar zcvf archive.tar.gz /usr/bin/
+tar jcvf archive.tar.bz2 /usr/bin/
+tar Jcvf archive.tar.xz /usr/bin/
+ls -lah 
+umask
+umask 200
+plik umask-test
+touch umask-test
+ls -la umask-test
+vi /etc/login.defs 
+umask 022
+ls -la 
+chown student:student plik1
+ls -la plik1
+chown root:student plik1
+ls -la plik1
+ls -la $(which passwd)
+ls -la plik2
+chmod 4644 plik2
+ls -la plik2
+chmod 744 plik2
+ls -la plik2
+chmod 4744 plik2
+ls -la plik2
+chmod 2744 plik3
+ls -la plik2
+ls -la plik3
+chmod 2754 plik3
+ls -la plik3
+mkdir testdir
+chown root:student -R testdir
+ls -la testdir
+chmod 770 test-dir/
+ls -la testdir
+ls -la test-dir
+ls -la
+rm -rf test-dir
+ls -la testdir
+chmod 770 testdir
+ls -la testdir
+chmod 2770 testdir
+ls -la testdir
+mv testdir /tmp/
+ls -la /tmp/testdir/
+su - student 
+useradd janek
+su - janek
+usermod -aG student janek
+su - janek
+ls -la /tmp
+su - janek
+su - student 
+ls -la
+ln -s output.txt softlink
+ls -la
+cat output.txt 
+vi softlink 
+cat output.txt 
+ls -lai
+ln output.txt hardlink
+ls -lai
+find . -type l 
+ls -lai
+vi output.txt 
+vi hardlink 
+rm output.txt 
+vi hardlink 
+ln hardlink output.txt
+ls -lai
+find . -inum 1179736
+rm output.txt 
+ls -lai
+vi softlink 
+ls -lai
+cat output.txt
+mkdir /srv/applicationA/data/logs/service1/frontend
+mkdir /srv/applicationA/data/logs/service1/frontend -p
+ln -s /srv/applicationA/data/logs/service1/frontend frontendA
+ls -la
+cd frontendA
+pwd
+apt search nginx
+apt install nginx -y
+vi /etc/apt/sources.list
+vi /etc/apt/sources.list.d/
+systemctl status nginx
+ip a
+netstat -vatnulp
+apt remove nginx
+apt upgrade
+apt dist-upgrade 
+apt full-upgrade
+apt purge nginx
+vi /etc/nginx/nginx.conf 
+apt purge --help
+apt purge 
+apt autoremove
+vi /etc/nginx/nginx.conf 
+ls -la /etc/nginx/nginx.conf
+apt list upgrade
+apt list-upgradeable
+apt update
+apt list --upgradable
+apt list --upgradable  | wc -l
+dpkg -l
+dpkg -l > beforeUpdate.log
+apt-get upgrade
+dpkg -l > afterUpdate.log
+diff beforeUpdate.log afterUpdate.log 
+ifconfig 
+ip addr add 192.168.1.100 dev ens33 
+ifconfig 
+ip a
+nmtui
+nmcli connection show
+nmcli device show ens33 
+mount 
+mount | grep cdrom
+mount | grep sr0
+umount /media/student/Ubuntu\ 22.04.3\ LTS\ amd64 
+mount /dev/cdrom /mnt
+cd /mnt
+ls -la
+umount /mnt
+cd
+umount /mnt
+mkdir /mymountingpoint
+mount /dev/sr0 /mymountingpoint
+cd /mymountingpoint
+ls -la
+cd ..
+umount /mymountingpoint
+lsblk
+cd
+vi /etc/sudoers
+groupadd webadmins
+useradd -m -s /bin/bash -c "test user1" testuser1
+useradd -m -s /bin/bash -c "test user2" testuser2
+usermod -aG webadmins testuser1
+id testuser1
+id testuser2
+visudo
+which sshd
+visudo
+which systemctl 
+visudo
+su - testuser1
+passwd testuser1
+passwd testuser2
+su - testuser1
+su - testuser2
+vi /etc/sudoers.d/testuser2
+vi /etc/sudoers
+su - testuser2
+vi /etc/sudoers.d/testuser2
+su - testuser2
+history
+history | awk '$1 > 47' | cut -c 8- > linux-zalando/day1-hisotry.txt
